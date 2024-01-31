@@ -1,0 +1,323 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="paw.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+</head>
+<style>
+
+.navbar {
+    transition: all 0.5s ease;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transition: left 0.3s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+    }
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+           
+            <img src="eurogreen_logo.png" alt="" style="width: 100px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarClose = document.querySelector('#navbarClose');
+    const navbarMenu = document.querySelector('.navbar-collapse');
+
+    navbarToggler.addEventListener('click', function () {
+        navbarMenu.classList.toggle('show');
+    });
+
+    navbarClose.addEventListener('click', function() {
+        navbarMenu.classList.remove('show');
+    });
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="eurogreen.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Close Button</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Custom styles for the navbar */
+        #rty{
+            padding: 2%;
+            background-color: #3498db; /* Set your initial background color */
+            transition: background-color 0.5s ease; /* Add transition for smooth color change */
+            
+        }
+        .navbar {
+            transition: all 0.5s ease;
+            
+        }
+
+     
+        .btn-close {
+            display: none; /* Hidden by default */
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            z-index: 1050; /* Above the content */
+        }
+
+        /* Styles for mobile view */
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 50%;
+                height: 100%;
+                background-color: white;
+                transition: left 0.3s ease;
+                padding-top: 1rem; 
+                margin-left: 0 !important; 
+            }
+
+            .navbar-collapse.show {
+                left: 0;
+            }
+
+            .navbar-collapse.show .btn-close {
+                display: block; 
+            }
+
+            .navbar-nav {
+            margin-right: 30%; 
+        }
+        }
+
+     
+
+        #navbarNav{
+            margin-left: 30%;
+          
+            /* color: green; */
+            
+        }
+
+       
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="rty">
+    <div class="container-fluid" >
+        <!-- <a class="navbar-brand" href="#">MyBlog</a> -->
+        <img src="eurogreen_logo.png" alt="" style="width: 200px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <button class="btn-close" id="navbarClose"></button>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="margin-right: 80px;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  style="margin-right: 80px;">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  style="margin-right: 80px;">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  style="margin-right: 80px;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda deleniti quod reprehenderit, omnis tempore fugit recusandae similique aperiam veniam dolorum modi beataebr
+ est non mollitia <br>necessitatibus ex perferendis quaerat placeat.
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ex nostrum numquam modi ad quis iure pariatur deleniti nihil iste dolorum, optio ipsum officiis dolores voluptas rerum deserunt atque repellat delectus aperiam ipsa temporibus non commodi. At soluta tempore in, eos, fugiat exercitationem distinctio voluptatum reprehenderit quam quae cum ut quasi temporibus nisi, cumque veritatis repudiandae laboriosam! Animi reiciendis magnam soluta consectetur molestiae molestias est aliquam id autem voluptatibus laborum hic consequatur laboriosam commodi blanditiis, error, minima, esse deserunt eveniet! Consectetur illum neque perspiciatis nostrum quae incidunt autem soluta mollitia, animi, voluptatum quos exercitationem numquam sint laborum eaque voluptas adipisci distinctio. Obcaecati quam non mollitia itaque quaerat consequatur a tempora quod error fugit, quas impedit repudiandae vel officia ducimus corporis perferendis exercitationem, deserunt placeat. Culpa aspernatur reprehenderit amet placeat ex dolore repellat et accusantium voluptate repudiandae. Magnam vel officia deleniti quisquam consequuntur eius delectus, eaque facilis hic. Culpa, quod repellendus. Eos eaque doloremque vero animi ut aut culpa distinctio inventore consectetur magnam quo consequuntur pariatur cupiditate architecto rem quae at tenetur excepturi, possimus maxime dolorem numquam maiores quidem? Neque explicabo in quae repudiandae nisi natus sequi nam iusto velit repellat, qui nostrum dolor consequatur nemo? Nam cumque quidem possimus quo? Recusandae sunt in earum ullam maiores unde dolor, esse alias quidem, doloremque molestiae repellendus consequuntur reiciendis! Perspiciatis delectus saepe harum nisi, sapiente molestias ab reprehenderit quibusdam molestiae veniam, nam sint. Exercitationem repellat repellendus corporis necessitatibus magni unde perspiciatis fuga aperiam itaque. A debitis autem rerum hic aperiam asperiores sequi corrupti aspernatur quaerat facere, animi cumque saepe quia quasi. Voluptate illo nam amet? Provident assumenda ipsam ad sed aut laborum, nulla dolore quisquam molestias enim perspiciatis est tenetur non fuga exercitationem aperiam voluptas numquam aspernatur ut atque ratione? Reiciendis provident similique libero. Quaerat nostrum ullam placeat animi doloribus sequi itaque nemo tenetur debitis. Tempora, repudiandae beatae ipsam molestiae molestias voluptatibus autem quaerat recusandae ut dicta rem. Numquam, ut. Minus exercitationem est non, veniam doloribus ad aliquid quia nam blanditiis? Aut voluptas nemo fugit cupiditate perferendis magnam enim placeat ipsam adipisci blanditiis deleniti quam animi consectetur dolorum porro molestias dolor rerum ex, error aliquid corrupti. Ab placeat, recusandae fugit nemo ratione unde saepe necessitatibus nisi voluptatum, iusto consequuntur animi tenetur corrupti incidunt, optio asperiores esse quas totam inventore delectus mollitia! Reprehenderit maxime soluta quas quae, cumque sit animi quia doloremque dolorum cupiditate ea libero quos vel iusto quis, voluptatibus consequuntur? Omnis rem sapiente tenetur consequatur officiis sint consequuntur velit quam, doloribus amet, reprehenderit, repellendus unde ab a dolor minus in quas dolorem ea quos delectus eaque. Atque, eos repellendus? Velit quia dicta incidunt facere temporibus? Quas nesciunt praesentium sapiente ducimus debitis tempore eius nostrum quam minima? Reprehenderit facere distinctio doloribus incidunt ex quibusdam ratione, soluta atque, labore quo, sed quae error provident animi. Veniam quas molestias fugiat incidunt cum voluptatibus sed facere nulla ut natus explicabo quia praesentium esse quidem nam possimus iusto cupiditate iure, necessitatibus eaque. Libero architecto aperiam sapiente eveniet vitae. Id omnis repudiandae, commodi aliquid autem, harum in suscipit laborum non quis ad vitae eos? Architecto placeat unde consectetur rerum repudiandae expedita perspiciatis corrupti ullam eaque, provident saepe libero aut recusandae omnis ducimus voluptatum doloremque nihil, est maiores blanditiis officia. Nulla, fugiat possimus quas officia iusto in distinctio optio repellat, itaque, ratione molestias tempora praesentium? Eos consequuntur, aperiam ipsum tempore vero deleniti distinctio earum voluptatem repudiandae nisi cumque voluptatum eaque tenetur voluptatibus! Ipsa quidem fugit ex temporibus a voluptatem laudantium minima itaque ea rem voluptates aperiam sed praesentium doloremque magni quae quo molestiae officiis illum, harum qui quisquam? Nihil, voluptates. Vero temporibus recusandae eligendi odio iure sunt aliquam reprehenderit atque in sapiente cumque, ipsa quod quae deleniti voluptatum illum culpa aliquid, ut voluptates fugit nobis aperiam eveniet? Omnis sapiente ipsam provident, sunt nemo autem esse dolorem obcaecati asperiores consectetur ad, error, consequatur odio tenetur eos vitae accusamus odit suscipit saepe dolore! Vel autem laudantium placeat repellendus saepe similique qui non commodi consequatur doloremque perspiciatis esse culpa, inventore ea eveniet nisi eos praesentium repellat explicabo tempora iste reiciendis ad error atque! Numquam quae a quas recusandae dignissimos impedit dolor dolore eaque dolorum, doloremque esse explicabo incidunt voluptates sint, molestias repellendus debitis illo aperiam aliquam, quidem cum! Aperiam, quam mollitia, similique soluta saepe ea esse culpa quos pariatur libero consectetur repudiandae quibusdam hic consequatur inventore! Quaerat inventore beatae earum quo incidunt, consequatur quibusdam. Accusamus temporibus atque ullam aliquid iste provident voluptate asperiores harum molestiae et eveniet eos corporis blanditiis dignissimos rerum vitae neque iusto, necessitatibus quidem, beatae maiores quia ex reprehenderit? Perferendis inventore consequuntur atque earum hic cupiditate incidunt voluptate modi assumenda repellat non saepe quas dolor iste officia accusamus, vitae id facere vel illum tempora quis soluta maiores quibusdam. Nobis magnam amet quo odio reprehenderit consequatur quam saepe, rem, ipsum aliquam a eius tempora nihil consequuntur. Earum soluta nobis impedit rerum nihil. Earum ab quisquam iusto dignissimos necessitatibus debitis illo nesciunt odit ratione accusantium similique nemo a molestias soluta, culpa, animi maxime ducimus sit, itaque labore cumque vitae recusandae asperiores quas? Numquam, odit quos eum ad, sunt quam quasi earum aut consequatur commodi deserunt quidem repellendus magni! Dignissimos, voluptatem vero adipisci officia doloremque iusto alias sit fugit! Quibusdam sint voluptatum deleniti impedit a laborum alias, fugit sit perspiciatis doloremque dolorum perferendis officiis aspernatur. Itaque, at deleniti? Corporis natus modi maxime, aliquam eaque sint deleniti accusamus voluptatum eveniet deserunt nesciunt. Perspiciatis fuga modi laborum odit quidem similique suscipit in quam tempora iste nostrum error hic cum ut, debitis quibusdam magni labore sequi itaque consequuntur soluta dolorem molestias id! Et odit dolorem veritatis optio dolorum, odio est porro totam quia? Velit perspiciatis doloribus dolorem, corrupti autem voluptatum dicta dolores odio, quod repellat veritatis esse exercitationem ipsum eius sunt iste aut natus magni quasi libero porro? Facilis quas odit soluta laborum rem nulla nesciunt ex, tenetur velit est nisi veritatis autem alias blanditiis esse illum impedit itaque earum voluptas deleniti praesentium optio voluptatibus vitae. Officia tempora vitae blanditiis aliquam debitis, unde et perferendis commodi. Consequuntur nulla unde distinctio quibusdam, voluptates consequatur incidunt sit!
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarClose = document.querySelector('#navbarClose');
+        const navbarMenu = document.querySelector('.navbar-collapse');
+        const navbar = document.getElementById('rty');
+
+        navbarToggler.addEventListener('click', function () {
+            navbarMenu.classList.toggle('show');
+        });
+
+        navbarClose.addEventListener('click', function() {
+            navbarMenu.classList.remove('show');
+        });
+
+        // Change navbar color on scroll
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) {
+                navbar.style.backgroundColor = 'white';
+            } else {
+                navbar.style.backgroundColor = '#3498db'; // Set your initial background color
+            }
+        });
+    });
+
+    
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+<div class="starhealth">     
+    <main>
+      <div class="cta-container">
+       <div class="cta-box" id="myDiv" style="cursor: pointer;">
+          <div class="content-section" id="eat">
+            
+          <h2 style=" color:  #00b309;">Lorem, ipsum dolor. <i class="fa-solid fa-user-doctor"></i></h2><hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam sint tenetur enim eveniet nisi. Molestias doloribus nemo illo nostrum. </p>
+        </div>
+        </div>
+        <div class="cta-box" id="yatch" style="cursor: pointer;">
+          <div class="content-section"  id="patty">
+            <div class="eee">
+          <h2 >Lorem, ipsum dolor. <i class="fa-brands fa-servicestack"></i> </h2><hr>
+          <p><b style="font-family:  'Lucida Handwriting', 
+            'Brush Script MT' ;"> Lorem </b>ipsum dolor sit amet, consectetur adipisicing elit. Quidem ducimus ipsam consectetur necessitatibus est repellendus doloremque odio eaque. Nulla ex quos illum ducimus! Libero voluptates assumenda ipsa ullam?
+             </p>
+             </div>
+        </div>
+        </div>
+        <div class="cta-box" id="tata" style="cursor: pointer;">
+          <div class="content-section" id="">
+            <div class="" id="water">
+          <h2 style=" color:  #00b309;"> Lorem, ipsum dolor. <i class="fa-solid fa-ring"></i></h2><hr>
+          <p> <b style="font-family:  'Lucida Handwriting', 
+            'Brush Script MT' ;">Lorem  </b>ipsum dolor sit amet consectetur adipisicing elit. Numquam maiores eaque illo. Corrupti obcaecati officia omnis assumenda id quod enim ad magni in.</p>
+             </div>
+        </div>
+        </div>
+        
+      </div>
+    </main>
+  
+    </div>
+    
+
+    main {
+        max-width: 150ex;
+        margin: 2% auto;
+        /* padding: 20px; */
+        background-color: #fff;
+        border-radius: 5%;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+      }
+  
+      .cta-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+       
+        padding: 50px; 
+      }
+  
+      .cta-box {
+        flex: 3;
+        padding: 2%;
+        /* border:px solid gray; */
+        border-radius: 10%;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
